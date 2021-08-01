@@ -49,6 +49,7 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -323,7 +324,9 @@ a {
   box-shadow: 0 12px 11px #0000001c;
 }
 .nav-mobile__list {
-  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
   border-top: 1.5px solid #edecff;
   padding: 1rem 0 0 0;
   margin: 0;
@@ -493,11 +496,12 @@ a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 2.5rem;
 }
 
 .features {
   width: min(320px, 70%);
+  -webkit-padding-after: 2.5rem;
+          padding-block-end: 2.5rem;
 }
 .features:hover .features__icon {
   transition: transform 500ms ease-out;
@@ -561,7 +565,6 @@ a {
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 2rem;
   padding: 200px 4rem 4rem 4rem;
   background-color: #0a0075;
 }
@@ -573,6 +576,10 @@ a {
 .news .new {
   background-color: white;
   max-width: 360px;
+}
+.news .new:not(:last-child) {
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
 }
 .news .new__tag {
   display: inline-block;

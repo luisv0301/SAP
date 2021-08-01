@@ -155,7 +155,9 @@
   flex-direction: column-reverse;
   box-shadow: 0 12px 11px #0000001c;
   &__list {
-    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
     border-top: 1.5px solid v.$tertiary-blue;
     padding: v.$spacing-s 0 0 0;
     margin: 0;
@@ -310,10 +312,10 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: v.$section-gap;
 }
 .features {
   width: min(320px, 70%);
+  padding-block-end: v.$section-gap;
   &:hover .features__icon {
     transition: transform 500ms ease-out;
     transform: scale(1.1);
@@ -375,7 +377,6 @@
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: v.$spacing-m;
   padding: 200px v.$spacing-l v.$spacing-l v.$spacing-l;
   background-color: v.$dark-blue;
   @include m.small {
@@ -384,6 +385,9 @@
   .new {
     background-color: white;
     max-width: 360px;
+    &:not(:last-child) {
+      margin-block-end: v.$spacing-m;
+    }
     &__tag {
       display: inline-block;
       padding: 0.4 * v.$spacing-s;
