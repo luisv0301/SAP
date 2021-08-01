@@ -1,0 +1,64 @@
+@use "../settings/variables" as v;
+@use "../tools/mixins" as m;
+
+body {
+  color: v.$secondary-gray;
+}
+
+h1,
+h2,
+h3 {
+  color: v.$primary-gray;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 5.5rem;
+  @include m.medium() {
+    font-size: 4rem;
+  }
+  @include m.small() {
+    font-size: 3rem;
+  }
+}
+h2 {
+  font-size: 3.75rem;
+  @include m.medium() {
+    font-size: 2.8rem;
+  }
+  @include m.small() {
+    font-size: 2.1rem;
+  }
+}
+h3 {
+  font-size: 2rem;
+  @include m.medium() {
+    font-size: 1.4rem;
+  }
+}
+h5 {
+  font-size: 1rem;
+}
+h1 + p {
+  margin-block-start: v.$spacing-s;
+}
+
+h2 + p {
+  margin-block-start: v.$spacing-s;
+}
+
+h3 + p {
+  margin-block-start: v.$spacing-s;
+}
+
+p + button {
+  margin-block-start: v.$spacing-m;
+}
+
+p + a {
+  margin-block-start: v.$spacing-m;
+}
+
+a {
+  text-decoration: none;
+}
