@@ -186,10 +186,15 @@
 
 //HEADER
 .header {
+  width: 100%;
   max-width: 1250px;
+  margin: -1rem;
   height: 785px;
   padding: v.$spacing-s;
   display: flex;
+  & > * {
+    margin: 1rem;
+  }
   @include m.medium {
     flex-direction: column;
   }
@@ -206,7 +211,7 @@
       align-items: center;
       text-align: center;
       padding-inline-start: 0;
-      padding-block-end: v.$section-gap;
+      padding-block-start: v.$spacing-s;
     }
   }
   &__imgs {
@@ -277,7 +282,6 @@
   @extend %section-padding;
   max-width: 1250px;
   display: flex;
-  gap: v.$section-gap;
   position: relative;
   @include m.medium {
     flex-direction: column-reverse;
@@ -339,7 +343,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   &__tittle {
     max-width: 850px;
     text-align: center;
@@ -453,7 +456,9 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: v.$footer-gap - 0.5rem;
+    li:not(:last-child) {
+      margin-inline-end: v.$spacing-s;
+    }
   }
   &__legal {
     padding: 0;
