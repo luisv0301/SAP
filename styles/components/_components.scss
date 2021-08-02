@@ -19,6 +19,7 @@
 //BUTTON
 .btn {
   width: fit-content;
+  line-height: 1;
   display: flex;
   align-items: center;
   padding: v.$spacing-s v.$spacing-m;
@@ -86,6 +87,7 @@
     margin-inline-start: v.$spacing-m;
   }
   &__link {
+    color: v.$secondary-gray;
     &:hover {
       color: v.$primary-blue;
     }
@@ -320,7 +322,7 @@
   flex-wrap: wrap;
 }
 .features {
-  width: min(320px, 70%);
+  width: min(320px, 90%);
   padding-block-end: v.$section-gap;
   &:hover .features__icon {
     transition: transform 500ms ease-out;
@@ -346,7 +348,7 @@
     }
   }
   &__img {
-    margin-block: v.$spacing-m;
+    margin: v.$spacing-m 0;
   }
   &__link {
     font-weight: 800;
@@ -362,7 +364,7 @@
   padding: v.$spacing-m;
   background-color: white;
   text-align: center;
-  width: Min(768px, 75%);
+  width: Min(768px, 85%);
   position: absolute;
   bottom: 0;
   right: 50%;
@@ -378,7 +380,7 @@
 }
 
 .news {
-  max-width: 1300px;
+  max-width: 1400px;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -386,15 +388,14 @@
   padding: 200px v.$spacing-l v.$spacing-l v.$spacing-l;
   background-color: v.$dark-blue;
   @include m.small {
-    padding: 220px v.$spacing-m v.$spacing-m v.$spacing-m;
+    padding: 180px v.$spacing-s v.$spacing-s v.$spacing-s;
   }
   .new {
     background-color: white;
     max-width: 360px;
-    &:not(:last-child) {
-      margin-block-end: v.$spacing-m;
-    }
+    margin: v.$spacing-s;
     &__tag {
+      font-size: 12px;
       display: inline-block;
       padding: 0.4 * v.$spacing-s;
       background-color: v.$tertiary-blue;
@@ -403,6 +404,8 @@
     }
     &__link {
       font-weight: 800;
+      display: inline-block;
+      margin-block-start: v.$spacing-s;
       color: v.$primary-blue;
     }
     &__text-wrapper {
