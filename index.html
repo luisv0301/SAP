@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <title>SAP</title>
   </head>
   <body>
@@ -97,7 +99,36 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__text">
-          <h1 class="header__headline">Your software solution is here.</h1>
+          <h1 class="header__headline">
+            Your software
+            <span class="header__outline-text"
+              >solution
+              <svg
+                version="1.1"
+                class="outline"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 176.3 17"
+                style="enable-background: new 0 0 176.3 17"
+                xml:space="preserve"
+              >
+                <line
+                  class="path"
+                  fill="none"
+                  stroke="#7a6dff"
+                  stroke-width="4"
+                  stroke-miterlimit="10"
+                  x1="0"
+                  y1="8.5"
+                  x2="178.5"
+                  y2="8.5"
+                />
+              </svg>
+            </span>
+            is here.
+          </h1>
           <p class="header__subheadline">
             In SAP we develop software solutions that facilitate effective data
             processing and information flow across organizations, ideally for
@@ -125,16 +156,19 @@
             alt="team meeting"
             width="569"
             height="370"
+            class="image-animation"
           /><img
             src="assets/Rectangle 14.png"
             alt="business woman"
             width="447"
             height="298"
+            class="image-animation"
           /><img
             src="assets/Rectangle 19.png"
             alt="man office"
             width="307"
             height="245"
+            class="image-animation"
           />
         </div>
       </header>
@@ -359,8 +393,8 @@
 
       <section class="section-customers">
         <h2 class="section-customers__tittle">
-          Ours customers represent <span>98%</span> of the top
-          <span>100</span> most valued brands
+          Ours customers represent <span class="animate-numbers-1">98%</span> of
+          the top <span class="animate-numbers-2">100</span> most valued brands
         </h2>
         <div class="section-customers__img">
           <img
@@ -577,7 +611,6 @@
 
           <ul class="footer__list">
             <h5 class="footer__subtittle">About SAP</h5>
-
             <li><a href="" class="footer__link"></a>Company Information</li>
             <li><a href="" class="footer__link"> Worldwide Directory </a></li>
             <li><a href="" class="footer__link"> Investor Relations </a></li>
