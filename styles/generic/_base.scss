@@ -26,6 +26,7 @@ ol[role="list"] {
 }
 
 /* Set core root defaults */
+
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -36,7 +37,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: helvetica;
-  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */

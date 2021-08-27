@@ -12,6 +12,7 @@ hamburMenu.addEventListener("click", () => {
 
 //ANIMATIONS
 //tween
+
 gsap.from(".image-animation", {
   scale: 1.2,
   opacity: 0,
@@ -33,25 +34,23 @@ sections.forEach((section) => {
       start: "center bottom",
       end: "bottom bottom",
       scrub: true,
-      markers: true,
     },
   });
   tl.from(title, {
     opacity: 0,
-    x: 500,
+    scale: 0.7,
   }).from(text, {
     opacity: 0,
-    x: 500,
+    scale: 0.7,
   });
 });
 
 const tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".section-customers",
-    start: "top center",
-    end: "+=400",
-    scrub: true,
-    markers: true,
+    start: "top bottom",
+    end: "bottom bottom",
+    scrub: 1,
   },
 });
 tl2
