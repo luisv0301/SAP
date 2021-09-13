@@ -10,39 +10,10 @@
     <title>SAP</title>
   </head>
   <body>
-    <nav class="nav">
-      <h5 class="logo">SAP</h5>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="" class="nav__link">Products</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Industries</a></li>
-        <li class="nav__item">
-          <a href="" class="nav__link">Services & Support</a>
-        </li>
-        <li class="nav__item"><a href="" class="nav__link">Learning</a></li>
-        <li class="nav__item"><a href="" class="nav__link">About</a></li>
-      </ul>
-      <div class="nav__actions">
-        <form action="" class="nav__form">
-          <svg
-            width="19"
-            height="20"
-            viewBox="0 0 19 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.49961 0.750549C8.89758 0.750493 10.2678 1.14116 11.4555 1.87847C12.6432 2.61578 13.6012 3.67038 14.2214 4.92325C14.8416 6.17613 15.0993 7.57741 14.9654 8.96896C14.8315 10.3605 14.3113 11.6869 13.4636 12.7985L18.2066 17.5435C18.386 17.7235 18.4901 17.965 18.4978 18.2189C18.5056 18.4729 18.4164 18.7203 18.2484 18.9108C18.0803 19.1014 17.8461 19.2209 17.5931 19.2449C17.3402 19.269 17.0876 19.196 16.8866 19.0406L16.7926 18.9576L12.0476 14.2145C11.1006 14.9366 9.99527 15.4228 8.82305 15.6329C7.65083 15.843 6.44543 15.7709 5.30661 15.4226C4.16778 15.0744 3.12826 14.4599 2.27406 13.6301C1.41986 12.8003 0.775549 11.779 0.394433 10.6507C0.0133168 9.52247 -0.0936444 8.31967 0.0823999 7.14186C0.258444 5.96405 0.712432 4.84509 1.4068 3.87758C2.10117 2.91006 3.01595 2.12181 4.07545 1.57804C5.13495 1.03426 6.30871 0.750612 7.49961 0.750549ZM7.49961 2.75055C6.04091 2.75055 4.64197 3.33001 3.61052 4.36146C2.57907 5.39291 1.99961 6.79186 1.99961 8.25055C1.99961 9.70924 2.57907 11.1082 3.61052 12.1396C4.64197 13.1711 6.04091 13.7505 7.49961 13.7505C8.9583 13.7505 10.3572 13.1711 11.3887 12.1396C12.4201 11.1082 12.9996 9.70924 12.9996 8.25055C12.9996 6.79186 12.4201 5.39291 11.3887 4.36146C10.3572 3.33001 8.9583 2.75055 7.49961 2.75055Z"
-              fill="#94A3B8"
-            />
-          </svg>
-
-          <input type="search" class="nav__search" />
-        </form>
-        <a href="" class="nav__user"></a>
-      </div>
-
-      <div class="nav-mobile">
-        <ul class="nav-mobile__list">
+    <div class="nav__wrapper">
+      <nav class="nav">
+        <h5 class="logo">SAP</h5>
+        <ul class="nav__list">
           <li class="nav__item"><a href="" class="nav__link">Products</a></li>
           <li class="nav__item"><a href="" class="nav__link">Industries</a></li>
           <li class="nav__item">
@@ -51,7 +22,7 @@
           <li class="nav__item"><a href="" class="nav__link">Learning</a></li>
           <li class="nav__item"><a href="" class="nav__link">About</a></li>
         </ul>
-        <div class="nav-mobile__actions">
+        <div class="nav__actions">
           <form action="" class="nav__form">
             <svg
               width="19"
@@ -65,36 +36,69 @@
                 fill="#94A3B8"
               />
             </svg>
+
             <input type="search" class="nav__search" />
           </form>
-          <a href="" aria-label="user" class="nav__user"></a>
+          <a href="" class="nav__user"></a>
         </div>
-      </div>
 
-      <button
-        class="nav__hambur-menu"
-        aria-haspopup="menu"
-        aria-expanded="false"
-        aria-label="menu"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          aria-hidden="true"
+        <div class="nav-mobile">
+          <ul class="nav-mobile__list">
+            <li class="nav__item"><a href="" class="nav__link">Products</a></li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Industries</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Services & Support</a>
+            </li>
+            <li class="nav__item"><a href="" class="nav__link">Learning</a></li>
+            <li class="nav__item"><a href="" class="nav__link">About</a></li>
+          </ul>
+          <div class="nav-mobile__actions">
+            <form action="" class="nav__form">
+              <svg
+                width="19"
+                height="20"
+                viewBox="0 0 19 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.49961 0.750549C8.89758 0.750493 10.2678 1.14116 11.4555 1.87847C12.6432 2.61578 13.6012 3.67038 14.2214 4.92325C14.8416 6.17613 15.0993 7.57741 14.9654 8.96896C14.8315 10.3605 14.3113 11.6869 13.4636 12.7985L18.2066 17.5435C18.386 17.7235 18.4901 17.965 18.4978 18.2189C18.5056 18.4729 18.4164 18.7203 18.2484 18.9108C18.0803 19.1014 17.8461 19.2209 17.5931 19.2449C17.3402 19.269 17.0876 19.196 16.8866 19.0406L16.7926 18.9576L12.0476 14.2145C11.1006 14.9366 9.99527 15.4228 8.82305 15.6329C7.65083 15.843 6.44543 15.7709 5.30661 15.4226C4.16778 15.0744 3.12826 14.4599 2.27406 13.6301C1.41986 12.8003 0.775549 11.779 0.394433 10.6507C0.0133168 9.52247 -0.0936444 8.31967 0.0823999 7.14186C0.258444 5.96405 0.712432 4.84509 1.4068 3.87758C2.10117 2.91006 3.01595 2.12181 4.07545 1.57804C5.13495 1.03426 6.30871 0.750612 7.49961 0.750549ZM7.49961 2.75055C6.04091 2.75055 4.64197 3.33001 3.61052 4.36146C2.57907 5.39291 1.99961 6.79186 1.99961 8.25055C1.99961 9.70924 2.57907 11.1082 3.61052 12.1396C4.64197 13.1711 6.04091 13.7505 7.49961 13.7505C8.9583 13.7505 10.3572 13.1711 11.3887 12.1396C12.4201 11.1082 12.9996 9.70924 12.9996 8.25055C12.9996 6.79186 12.4201 5.39291 11.3887 4.36146C10.3572 3.33001 8.9583 2.75055 7.49961 2.75055Z"
+                  fill="#94A3B8"
+                />
+              </svg>
+              <input type="search" class="nav__search" />
+            </form>
+            <a href="" aria-label="user" class="nav__user"></a>
+          </div>
+        </div>
+
+        <button
+          class="nav__hambur-menu"
+          aria-haspopup="menu"
+          aria-expanded="false"
+          aria-label="menu"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
-    </nav>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </nav>
+    </div>
 
     <div class="wrapper">
       <header class="header">
